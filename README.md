@@ -3,7 +3,7 @@
 **Architecture, Patterns & Internals of Anthropic's AI Coding Agent**
 
 <p align="center">
-  <img src="./cover.png" alt="Claude Code from Source — Book Cover" width="400" />
+  <img src="./assets/cover.png" alt="Claude Code from Source — Book Cover" width="400" />
 </p>
 
 ---
