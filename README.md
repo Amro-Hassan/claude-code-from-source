@@ -88,7 +88,8 @@ Every chapter has layered depth: a narrative flow for technical leaders, deep-di
 
 | # | Chapter | What You'll Learn |
 |---|---------|-------------------|
-| 13-14 | [Terminal UI + Input & Interaction](./book/ch13-14-terminal-ui.md) | Custom Ink fork, rendering pipeline, keybindings, vim mode |
+| 13 | [The Terminal UI](./book/ch13-terminal-ui.md) | Custom Ink fork, rendering pipeline, double-buffer, pools |
+| 14 | [Input and Interaction](./book/ch14-input-interaction.md) | Key parsing, keybindings, chord support, vim mode |
 
 ### Part VI: Connectivity
 *The agent reaches beyond localhost.*
