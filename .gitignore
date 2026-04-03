@@ -8,5 +8,9 @@ web/node_modules/
 web/dist/
 web/.astro/
 
+# Draft images and original assets
+images/
+assets/
+
 # Local reference material — not for distribution
 .reference/

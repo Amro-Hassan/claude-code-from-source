@@ -161,70 +161,19 @@ html.dark .chapter-prose hr {
   color: var(--color-terracotta);
 }
 
-/* Apply This section styling */
-.chapter-prose h2[id*="apply-this"],
-.chapter-prose h2[id*="apply-this"] ~ * {
-  /* Styled via JS — see apply-this detection in mermaid-init */
-}
-
-.apply-this-section {
-  border-left: 3px solid var(--color-terracotta);
-  background-color: rgba(217, 119, 87, 0.05);
-  padding: 1.5rem 1.5rem 1.5rem 2rem;
+/* Diagram slots — placeholders where interactive components get teleported inline */
+.diagram-slot {
   margin: 2rem 0;
-  border-radius: 0 0.5rem 0.5rem 0;
 }
 
-html.dark .apply-this-section {
-  background-color: rgba(217, 119, 87, 0.08);
+/* Empty slots (no interactive component mapped) collapse to zero height */
+.diagram-slot:empty {
+  display: none;
 }
 
-/* Mermaid container */
-.mermaid-diagram {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.mermaid-diagram svg {
-  min-width: min(100%, 600px);
-  height: auto;
-  max-height: 80vh;
-}
-
-/* Diagram grid: 2x2 layout for multiple related diagrams */
+/* Hide the diagram-grid wrapper from ch16 markdown (topologies replaced by React component) */
 .diagram-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.diagram-grid .mermaid-diagram {
-  margin: 0;
-  border: 1px solid var(--color-border);
-  border-radius: 0.5rem;
-  padding: 1rem;
-}
-
-html.dark .diagram-grid .mermaid-diagram {
-  border-color: #333;
-}
-
-@media (max-width: 640px) {
-  .diagram-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.mermaid-loading {
-  padding: 2rem;
-  text-align: center;
-  color: var(--color-muted);
-  font-size: 0.875rem;
-  font-style: italic;
+  display: none;
 }
 
 /* Table wrapper for horizontal scroll on mobile */

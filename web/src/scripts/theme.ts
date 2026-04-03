@@ -15,7 +15,7 @@ export function setTheme(theme: 'light' | 'dark' | 'system') {
     localStorage.setItem('theme', theme);
   }
   applyTheme();
-  // Notify mermaid to re-render
+  // Notify React components to update their color schemes
   window.dispatchEvent(new CustomEvent('theme-changed'));
 }
 

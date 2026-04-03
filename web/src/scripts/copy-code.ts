@@ -1,8 +1,5 @@
 // Add copy buttons to all code blocks
 document.querySelectorAll('pre').forEach((pre) => {
-  // Skip mermaid blocks
-  if (pre.classList.contains('mermaid')) return;
-
   const wrapper = document.createElement('div');
   wrapper.className = 'code-block-wrapper';
   pre.parentNode?.insertBefore(wrapper, pre);
